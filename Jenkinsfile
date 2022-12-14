@@ -29,7 +29,7 @@ pipeline{
             }
         }
         stage('3-codetest'){
-            agen {
+            agent {
                 label 'slave1'
             }
             steps{
