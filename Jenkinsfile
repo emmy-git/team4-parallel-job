@@ -6,7 +6,7 @@ pipeline{
                 sh 'cat /etc/passwd'
             }
         }
-        stege('2-parallel-jobs'){
+        stage('2-parallel-jobs'){
             parallel{
                 stage('1-subjob1'){
                     steps{
@@ -25,7 +25,7 @@ pipeline{
                 sh 'free -m'
             }
         }
-        stage(4-closing){
+        stage('4-closing'){
             steps{
                 echo "we are done"
             }
